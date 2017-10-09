@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <h2>
+  <%= @video.name %>
+  </h2>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @video.genre %>
+</p>
+
+<p>
+  <strong>Year released:</strong>
+  <%= @video.year_released %>
+</p>
+
+<p>
+  <strong>Classification:</strong>
+  <%= @video.classification %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @video.description %>
+</p>
+
+<%= link_to 'Edit', edit_video_path(@video), class: 'btn btn-warning btn-sm' %> |
+<%= link_to 'Back', videos_path, class: 'btn btn-success btn-sm' %>
